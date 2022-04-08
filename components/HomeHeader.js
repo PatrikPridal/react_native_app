@@ -1,10 +1,16 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text, Image, TextInput } from 'react-native';
+
+import { COLORTS, FONTS, SIZES, assets } from '../constants';
 
 const HomeHeader = () => {
   return (
-    <View>
-      <Text>Yooo</Text>
+    <View style={{
+      backgroundColor: COLORS.primary,
+      padding: SIZES.font
+    }}>
+      <View>
+        
+      </View>
     </View>
   )
 }
