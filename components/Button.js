@@ -50,4 +50,4 @@ export const RectButton = ({ minWidth, fontSize, handlePress, ...props }) => {
       </Text>
     </TouchableOpacity>
   )
-}
+};
