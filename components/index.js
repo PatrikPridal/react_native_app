@@ -6,5 +6,5 @@ import DetailsDesc from "./DetailsDesc";
 import DetailsBid from "./DetailsBid";
 
 export {
-    HomeHeader, NFTCard, FocusedStatusBar, CircleButton, RectButton,
+    HomeHeader, NFTCard, FocusedStatusBar, CircleButton, RectButton, DetailsBid, DetailsDesc,
 }
