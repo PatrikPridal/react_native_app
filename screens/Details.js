@@ -14,6 +14,14 @@ const Details = ({ route, navigation }) => {
         backgroundColor="transparent"
         transLucent={true}
       />
+
+      <View>
+        <RectButton 
+          minWidth={170}
+          fontSize={SIZES.large}
+          {...SHADOWS.dark}
+        />
+      </View>
     </SafeAreaView>
   )
 }
