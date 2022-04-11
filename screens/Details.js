@@ -1,7 +1,16 @@
+import React from "react";
 import { View, Text, SafeAreaView, Image, StatusBar, FlatList } from "react-native";
 
 import { COLORS, SIZES, SHADOWS, FONTS, assets } from '../constants';
 import { CircleButton, RectButton, SubInfo, FocusedStatusBar, DeatilsDesc, DetailsBid } from '../components';
+
+const DetailsHeader = ({ data, navigation }) => (
+  <View style={{ width: '100%', height: 373 }}>
+    <Image 
+      source={data.image}
+    />
+  </View>
+)
 
 
 const Details = ({ route, navigation }) => {
@@ -38,6 +47,11 @@ const Details = ({ route, navigation }) => {
         keyExtractor={(item) => item.id}
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingBottom: SIZES.extraLarge * 3 }}
+        ListHeaderComponent={() => (
+          <React.Fragment>
+            <DetailsHeader data={data} navigation={navigation} />
+          </React.Fragment>
+        )}
       />
     </SafeAreaView>
   )
