@@ -14,6 +14,7 @@ const DetailsHeader = ({ data, navigation }) => (
 
     <CircleButton 
       imgUrl={assets.left}
+      handlePress={() => navigation.goBack()}
     />
   </View>
 )
