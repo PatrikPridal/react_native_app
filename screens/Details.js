@@ -3,11 +3,18 @@ import { View, Text, SafeAreaView, Image, StatusBar, FlatList } from "react-nati
 import { COLORS, SIZES, SHADOWS, FONTS, assets } from '../constants';
 import { CircleButton, RectButton, SubInfo, FocusedStatusBar, DeatilsDesc, DetailsBid } from '../components';
 
-const Details = () => {
+
+const Details = ({ route, navigation }) => {
+  const { data } = route.params;
+
   return (
-    <View>
-      <Text>Details</Text>
-    </View>
+    <SafeAreaView style={{ flex: 1}}>
+      <FocusedStatusBar 
+        barStyle="dark-content"
+        backgroundColor="transparent"
+        transLucent={true}
+      />
+    </SafeAreaView>
   )
 }
 
