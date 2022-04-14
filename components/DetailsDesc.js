@@ -7,13 +7,21 @@ import { COLORS, SIZES, FONTS } from '../constants';
 const DetailsDesc = ({ data }) => {
   return (
     <>
-      <View>
+      <View style={{
+        width: "100%",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center"
+
+      }}>
         <NFTTitle 
           title={data.name}
           subTitle={data.creator}
           titleSize={SIZES.extraLarge}
           subTitleSize={SIZES.font}
         />
+
+        <EthPrice price={data.price} />
       </View>
     </>
   )
