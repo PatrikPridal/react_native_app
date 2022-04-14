@@ -5,6 +5,7 @@ import { EthPrice, NFTTitle } from './SubInfo';
 import { COLORS, SIZES, FONTS } from '../constants';
 
 const DetailsDesc = ({ data }) => {
+  const [text, setText] = useState(data.description.slice(0, 100));
   return (
     <>
       <View style={{
@@ -36,7 +37,7 @@ const DetailsDesc = ({ data }) => {
           fontFamily: FONTS.regular,
           color: COLORS.secondary,
           lineHeight: SIZES.large
-        }}>{data.description}</Text>
+        }}>{text}</Text>
         </View>
 
       </View>
