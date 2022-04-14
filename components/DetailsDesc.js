@@ -8,7 +8,12 @@ const DetailsDesc = ({ data }) => {
   return (
     <>
       <View>
-        
+        <NFTTitle 
+          title={data.name}
+          subTitle={data.creator}
+          titleSize={SIZES.extraLarge}
+          subTitleSize={SIZES.font}
+        />
       </View>
     </>
   )
