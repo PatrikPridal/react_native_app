@@ -26,7 +26,7 @@ export const CircleButton = ({ imgUrl, handlePress, ...props }) => {
       />
     </TouchableOpacity>
   )
-} 
+};
 
 export const RectButton = ({ minWidth, fontSize, handlePress, ...props }) => {
   return (
